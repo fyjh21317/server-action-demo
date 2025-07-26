@@ -11,4 +11,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model ActorSubmission {
+  id             Int      @id @default(autoincrement())
+  name           String
+  favoriteActor  String
+  reason         String
+  createdAt      DateTime @default(now())
+}
+
 
