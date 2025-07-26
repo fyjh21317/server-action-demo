@@ -1,3 +1,4 @@
+// https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/introduction#3-importing-prisma-client
 import { PrismaClient } from '@/generated/prisma';
 
 const globalForPrisma = globalThis as unknown as {
